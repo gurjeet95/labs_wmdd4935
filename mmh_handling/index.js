@@ -1,8 +1,8 @@
-var Hapi = require('hapi');
-var Inert = require('inert');
-var Path = require('path');
+let Hapi = require('hapi');
+let Inert = require('inert');
+let Path = require('path');
 
-var server = new Hapi.Server();
+let server = new Hapi.Server();
  server.connection({
     host: 'localhost',
     port: Number(process.argv[2] || 8080)
